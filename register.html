@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="form.css">
+   
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Your Logo" class="logo">
+        </div>
+        <div class="header-title">
+            <h1>REGISTRATION FORM</h1>
+        </div>
+        <div>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="formContainer">
+            <div class="eventName">EASE THE ERROR 3.0 Registration Form</div>
+            <div class="list">
+                <ul>
+                    <li class="rules">Only Team Leaders should fill the form.</li>
+                    <li class="rules">A team should consist of 4-6 members.</li>
+                    <li class="rules">Every participant of a team must be from the same college.</li>
+                    <li class="rules">The event is a SOFTWARE based hackathon.</li>
+                    <li class="rules">The Abstract must be sent in the same format as the mentioned template.</li>
+                    <li class="rules">Food and Refreshments will be provided during the event.</li>
+                    <li class="rules">Registration Fee : Rs.400 per head </li>
+                    <li class="rules">Registration Fees must be paid as a whole by the Team Leader.</li>
+                    <li class="rules">The Drive link to the Problem Statements are attached below.</li>
+                    <li class="rules">Last date for registration : 12th May</li>
+                    <li class="rules">Last date for Abstract Submission : 14th May</li>
+                    <li class="rules">Join the WhatsApp group using the link given at the end of the form. </li>
+                </ul>
+            </div>
+            <div class="paragraph">
+                <div>For the Problem Statements refer to the link given below</div>
+                <a href="#">PS link here</a>
+            </div>
+            <div class="paragraph">
+                <div>For further updates, follow our Instagram Page</div>
+                <a href="https://www.instagram.com/fodse_svce?igshid=YmMyMTA2M2Y%3D">Click here</a>
+            </div>
+            <div class="paragraph">
+                <div>For Queries Contact:</div>
+                <div>Akeel Ahamed R S (Joint-Secretary, FODSE) - 7708382698</div>
+                <div>C Aravindhan (Executive Member, FODSE) - 8925001432</div>
+            </div>
+            <form action="action_page.php">
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email ID</label>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="email" name="tname" placeholder="Enter your emailid...">
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-25">
+                <label for="tname">Team Name</label>
+                </div>
+                <div class="col-75">
+                <input
+                    type="text"
+                    id="tname"
+                    name="tname"
+                    placeholder="Your name.."
+                />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                <label for="TLname">Team Leader Name</label>
+                </div>
+                <div class="col-75">
+                <input
+                    type="text"
+                    id="TLname"
+                    name="TLname"
+                    placeholder="Your Team leader name.."/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                <label for="gender">Gender</label>
+                </div>
+                <div class="col-75">
+                    <select id="gender" name="gendewr">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>               
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                <label for="College">College</label>
+                </div>
+                <div class="col-75">
+                <select id="college" name="college">
+                    <option value="Svce">Svce</option>
+                    <option value="Other">Other</option>
+                </select>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-25">
+                <label for="IETE">Member of IETE</label>
+                </div>
+                <div class="col-75">
+                <select id="IETE" name="IETE">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="IETE">IETE Registration ID</label>
+                </div>
+                <div class="col-75">
+                <input
+                    type="text"
+                    id="IETEreg"
+                    name="IETEreg"
+                    placeholder="Short answer text.."/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="Year">Year</label>
+                </div>
+                <div class="col-75">
+                <select id="Year" name="Year">
+                    <option value="Ist">Ist</option>
+                    <option value="IInd">IInd</option>
+                    <option value="IInd">IIIth</option>
+                    <option value="IInd">IVth</option>
+                </select>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-25">
+                    <label for="Department">Department</label>
+                    </div>
+                    <div class="col-75">
+                    <select id="Department" name="Department">
+                        <option value="IT">Information Technology</option>
+                        <option value="CSE">Computer Science Engineering</option>
+                        <option value="ADS">Artificial Intelligence</option>
+                        <option value="EEE">Electrical and Electronic Engineering</option>
+                        <option value="ECE">Electronics and communication engineering</option>
+                        <option value="MEC">MECHANICAL ENGINEERING</option>
+                        <option value="BIO">Biotechnology </option>
+                        <option value="CHE">Chemical Engineering</option>
+                        <option value="CIV">Civil Engineering</option>
+                        <option value="AUT">Automobile Engineering</option>
+                        <option value="MAR">Marine Engineering</option>
+                        <option value="OTHER">Other</option>
+                    </select>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="TLnum">Team Leader Contact Number</label>
+                </div>
+                <div class="col-75">
+                <input
+                    type="text"
+                    id="TLnum"
+                    name="TLnum"
+                    placeholder="Your Team leader Contact.."/>
+                </div> 
+            </div>    
+            <div>
+                <a href="Team_members.html" class="next-btn">Next</a>
+            </div>
+        </div>
+        <iframe src="background.html" frameborder="0"></iframe>
+    </div>
+</body>
+</html>

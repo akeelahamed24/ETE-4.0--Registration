@@ -1,0 +1,182 @@
+/* Style inputs, select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.formContainer {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  /* background-color: transparent; */
+  opacity: 0.8;
+  width: 60%;
+}
+
+.row {
+  background-color: #2a3b57;
+  opacity: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+  margin-left: 10px;
+  color: #f2f2f2;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.descContainer {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  /* background-color: transparent; */
+  opacity: 0.8;
+  width: 60%;
+}
+
+.eventName {
+  font-size: 40px;
+  color: #2a3b57;
+}
+
+.rules {
+  color: #2a3b57;
+}
+
+.list {
+  position: relative;
+}
+.list h2 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.list ul {
+  position: relative;
+}
+.list ul li {
+  position: relative;
+  left: 0;
+  color: #2a3b57;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 2px solid #2a3b57;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.list ul li:hover {
+  left: 10px;
+}
+.list ul li div {
+  position: relative;
+  padding: 8px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+.list ul li:hover div {
+  color: #111;
+}
+.list ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 10%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.list ul li:hover:before {
+  transform: scaleX(1);
+}
+
+.paragraph {
+  margin-top: 20px;
+  color: #2a3b57;
+  margin-bottom: 10px;
+}
+
+.next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 100px;
+}
+
+.row:last-child {
+  margin-bottom: 10px;
+}
